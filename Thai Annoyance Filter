@@ -1,0 +1,58 @@
+! Title: Thai Annoyance Filter
+! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
+! Version: 202012040711
+! Last modified: 04 Dec 2020 07:11 UTC
+! Expires: 3 days
+! Homepage: https://adblock-thai.github.io/
+! License: https://github.com/adblock-thai/thai-ads-filter/blob/master/LICENSE
+! Reporting Issues: https://github.com/adblock-thai/thai-ads-filter/issues
+! Community: https://spectrum.chat/adblock-thailand
+! Download: https://adblock-thai.github.io/thai-ads-filter/annoyance.txt
+!
+!-------------- annoyance_filters --------------
+
+!----- filters_annoyance/specific_hide.txt -----
+thaiware.com###MainPopup
+blognone.com###above_comments
+blognone.com###block-views-jobs-blognone-com-block
+ch3plus.com###cookie_policy
+music.siamza.com###fanback
+stackoverflow.com###js-gdpr-consent-banner
+matichon.co.th###pdpa-popup
+sudsapda.com###share-buttons
+thestandard.co##.cookie-notice-container
+ch3thailandnews.bectero.com##.cookieinfo
+posttoday.com##.enews-notice
+voicetv.co.th##.is-active.content-bar > .navbar
+pantip.com##.pt-snackbar
+prachatai.com##.st-sticky-share-buttons
+prachatai.com##.support-pay
+khaosod.co.th##.udsg__content > p:has(img[src*="line-apps.com/n/line_add_friends"])
+blognone.com##div[class*="node sticky"]
+thaiware.com##div[id^="fan-exit"]
+thaiware.com##div[id^="fanback"]
+thaiware.com##div[id^="fanbox"]
+thaiware.com##div[id^="fanclose"]
+animeloli.com##header
+
+!----- filters_annoyance/thirdparty.txt -----
+
+
+!----- filters_annoyance/general_block.txt -----
+itro-popup/scripts/itro-scripts.js$first-party,script
+||pantip.com/api/forum-service/forum/get_promote_box?
+||pantip.com/api/forum-service/forum/get_promote_tag?
+
+!----- filters_annoyance/specific_block.txt -----
+||blogspot.com/*/LOGO-1-utaseries.co.png$image,redirect=1x1.gif
+||cdn.onesignal.com^$important,script,third-party
+||komchadluek.net/cookie_confirm$script
+||mailchimp.com/js/signup-forms/popup/*$script,third-party
+||richinfo.co/js/$script,third-party
+! axeload.com facebook popup
+||axeload.com/wp-content/plugins/popup-by-supsystic/*
+
+!----- filters_annoyance/general_hide.txt -----
+
+
+!----- filters_annoyance/whitelist.txt -----
